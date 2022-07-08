@@ -1,2 +1,2 @@
 # ProjectNodeJsPrueba
-Un projecto cualquiera de node js con ES6
+A random project using  ES6
