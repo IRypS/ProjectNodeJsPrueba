@@ -10,13 +10,9 @@ modules.exports = router; */
 import { Router } from 'express';
 const router = Router();
 
-router.get('/', (req, res) => {
-  res.json({ status: "success", nombre: "Juan" });
-});
+import productsRoutes from '../apiServices/productos/routes.js';
 
-router.get('/ruta2', (req, res) => {
-  res.json({ status: "accediendo a la ruta 2" });
-});
+router.use('/products', productsRoutes);
 
 export default router;
 
