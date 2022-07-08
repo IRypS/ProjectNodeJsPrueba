@@ -1,4 +1,7 @@
+import 'dotenv/config';
 import express from 'express';
+
+import './database/conexionMongo.js'
 
 const app = express();
 
