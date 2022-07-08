@@ -1,0 +1,34 @@
+{
+  "name": "projectnodejsprueba",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Un projecto cualquiera de node js con ES6",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IRypS/ProjectNodeJsPrueba.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IRypS/ProjectNodeJsPrueba/issues"
+  },
+  "homepage": "https://github.com/IRypS/ProjectNodeJsPrueba#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "mongoose": "^6.4.4",
+    "mongoose-delete": "^0.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
