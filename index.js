@@ -15,8 +15,8 @@ app.use(cookieParser());
 //RUTAS
 app.use('/api/v1', rutasApp);
 
-
-const PORT = process.env.PORT || 1642;
+app.get('/a', (req, res) => res.send("hello") )
+const PORT = process.env.PORT || 8082;
 
 app.listen(
   PORT,

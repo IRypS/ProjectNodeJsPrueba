@@ -1,0 +1,26 @@
+version: '1.0'
+
+services:
+
+  node_app:
+    container_name: example
+    restart: always
+    build: .
+    ports: 
+      - "8205:8082"
+    links: 
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    restart: always
+    hostname: mongo-host
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: iryps
+    volumes:
+      - ./data:/data/db
+      - ./data/log:/var/log/mongodb/
+    ports:
+      - 22017:27017
